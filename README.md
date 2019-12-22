@@ -1,4 +1,5 @@
 # RPI4-Fedora30
+Look for the config in https://github.com/jfclere/tomcatPI/blob/master/cloud/bcm2711_defconfig
 File for rasbian to use on RPI4 for fedora30
 build the kernel
 ```bash
