@@ -22,3 +22,8 @@ The bcm2711-rpi-4-b.dtb is for bcm2711-rpi-4-b.dtb, use the one you build with t
 ```bash
 cp ./arch/arm64/boot/dts/broadcom/bcm2711-rpi-4-b.dtb /run/media/jfclere/8499-9CF0/bcm2711-rpi-4-b.dtb
 ```
+*CGROUPS_MEMORY: missing* is fixed by adding "cgroup_enable=memory" in /boot/efi/cmdline.txt
+I have:
+```
+wc_otg.lpm_enable=0 console=serial0,115200 console=tty1 root=/dev/mmcblk0p3 elevator=deadline rootfstype=ext4 fsck.repair=yes rootwait cgroup_enable=memory
+```
