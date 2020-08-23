@@ -17,3 +17,8 @@ Copy the kernel in the vfat boot partition (something like /run/media/jfclere/84
 ```bash
 cp arch/arm64/boot/Image /run/media/jfclere/8499-9CF0/kernel8.img
 ```
+# Using rpi-5.4.y
+The bcm2711-rpi-4-b.dtb is for bcm2711-rpi-4-b.dtb, use the one you build with the new kernel
+```bash
+cp ./arch/arm64/boot/dts/broadcom/bcm2711-rpi-4-b.dtb /run/media/jfclere/8499-9CF0/bcm2711-rpi-4-b.dtb
+```
